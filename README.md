@@ -11,8 +11,6 @@ Codear, Codear es divertido!
 
 ## Índice (opcional)
 
-Si su README es extenso, agregue un índice para facilitar que los usuarios encuentren lo que necesitan.
-
 - [Instalación](#instalación)
 - [Uso](#uso)
 - [Créditos](#créditos)
@@ -66,6 +64,6 @@ SOFTWARE.
 
 ## Images
 ```md
- ![alt text](assets/images/pscrearcodqrjs.png)
+ ![alt text](img/pscrearcodqrjs.png)
 ```
 
