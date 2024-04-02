@@ -1,0 +1,9 @@
+.icono_derecha{
+float:right !important;
+top:0;
+font-size:x-small;
+text-decoration: none;
+color:rgba(52, 73, 94,1.00);
+text-align:center;
+padding:2px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Generando Código QR con Javascript</title>
+  </head>
+  <body>
+    <div class="container-fluid bg-secondary p-2 text-center text-white">
+      <div class="">
+        <img src="img/img01.png" height="120px" class="rounded-circle border border-light mt-3">
+      </div>
+      <div class="fs-3">
+        Generar código QR con Javascript
+      </div>
+      <div class="fs-5 small">
+        HTML - Javascript - Librería QRcode.js - Bootstrap v5
+      </div>
+
+    </div>
+    <div class="container p-2">
+      <div class="mt-3 p-2">
+        <div class="row justify-content-center">
+          <div class="col-md-5 m-1 p-2 border border-secondary p">
+            <h5>Capture un texto</h5>
+            <hr>
+            <div class="form-floating">
+              <input type="text" id="aqr" placeholder="" class="form-control">
+              <label for="aqr">Texto a convertir</label>
+            </div>
+            <div id="msg_error" class="small mt-2">
+            </div>
+
+            <div class="mt-3 p-3 text-center">
+
+              <button class="btn btn-outline-primary m-2" onclick="javascript:generar_qr();"><img src="img/iconoconvertir.png" height="35px"><br>CONVERTIR !</button>
+              <button class="btn btn-outline-danger m-2" onclick="javascript:limpiar();"><img src="img/iconolimpiar.png" height="35px"><br>LIMPIAR !</button>
+              <br>
+              <a href="javascript:convertir_sin_opc();">Convertir sin Opciones</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 p-2 m-1 text-center border border-secondary">
+            <a id="lnk_desc" href="javascript:guardar_QR();" title="Clic para descargar la imagen">
+              <div class="icono_derecha">
+                <img src="img/iconodescargar.png" height="40px">
+              </div>
+            </a>
+
+            <div id="titulo" class="fs-5 text-start">
+              Texto en Código QR.
+            </div>
+            <hr>
+            <div id="cont_qr" class="p-2 justify-content-center align-items-center text-center border">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Notas sobre esta versión -->
+      <div class="p-2 m-3 d-flex justify-content-center">
+        <div class="border border-secondary rounded shadow p-2 w-50">
+          <div class="fw-bold text-center">
+            * Notas sobre la versión
+          </div>
+          <div class="small mt-2 text-justify">
+            <ul>
+              <li>
+                <p class="text-justify">Convertir un texto proporcionado a un código QR </p>
+              </li>
+              <li>
+                <p class="text-justify">Se utiliza la librería qrcode.js</p>
+              </li>
+              <li>
+                <p class="text-justify">El código QR generado puede descargarse dando clic al botón.</p>
+              </li>
+            </ul>
+
+            <b>Recuerda, Codear, Codear es divertido !</b>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <link href="../css/bootstrap.css" rel="stylesheet"/>
+  <link href="css/index.css" rel="stylesheet"/>
+  <script src="js/qrcode.js"></script>
+  <script src="js/funciones.js"></script>
+</html>
